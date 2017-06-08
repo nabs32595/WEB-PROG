@@ -1,13 +1,16 @@
 <?php
 
+echo "<fieldset>";
 echo "Welcome " . $_POST["fname"] . "<br>";
-echo "Your address is: " . $_POST["addr"] . "<br>";
+
 
 if ( $_POST["pswd"] == $_POST["retype"] ) {
-	echo "Password is a match  <br>"; 
+	echo " <font color = 'blue'> Password is a match  </font> <br>"; 
 }else {
-	echo "password did not match  <br>";
+	echo " <font color = 'red'> password did not match </font> <br>";
 }
 
+echo "Your address is: " . $_POST["addr"] . "<br>";
+echo "</fieldset>";
 
 ?>
